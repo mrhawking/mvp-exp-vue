@@ -1,12 +1,14 @@
 <script setup>
 import MainButton from "./ui/MainButton.vue";
+
+const emit = defineEmits(["createExperiment"]);
 </script>
 
 <template>
   <header class="main-header">
     <div class="inner">
       <MainButton is-link to="/completed">Завершенные</MainButton>
-      <MainButton>Создать</MainButton>
+      <MainButton is-link to="/create">Создать</MainButton>
     </div>
     <MainButton>Выйти</MainButton>
   </header>
